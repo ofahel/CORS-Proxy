@@ -49,6 +49,7 @@ include("cors.php");
 
 ## ✨ Demo
 > Proxy page: https://cors-proxy.tk/?url=http://google.com/
+
 > Proxy HTTP resource: https://cors-proxy.tk/?url=https://i.imgur.com/hSyuS32.png
 
 ## Development
