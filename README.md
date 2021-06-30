@@ -41,11 +41,11 @@ include("cors.php");
 ?>
 ```
 
-## 📄 Usage Example
+## 📄 Parameters List
 
 | Parameter | Description                            | Rule       | Default |
 |-----------|----------------------------------------|------------|---------|
-| url       | Give the remove url to ?url= parameter | **Needed** |         |
+| url       | Give the remote url to ?url= parameter | **Needed** |         |
 
 ## ✨ Demo
 > Proxy page: https://cors-proxy.tk/?url=http://google.com/
