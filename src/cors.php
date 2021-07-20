@@ -34,6 +34,19 @@ $time_to_abort = 15*60;
 //End of config section
 //--------------------------------------
 
+//Get the remote filename
+function getDisposition($content){
+	//Ignore warnings, needed to suppress errors on buffer
+	error_reporting(E_ALL ^ E_WARNING);
+	//Get content-disposition filename
+	$ret = explode('"', explode('; filename="', $content)[1])[0];
+	//Reactive warnings
+	error_reporting(E_ALL);
+
+	//Check size, case 0 return false,
+	return (strlen($ret) == 0) ? false : $ret;
+}
+
 //Needed to allow XHR - CORS
 header('Access-Control-Allow-Origin: *');
 
@@ -89,6 +102,14 @@ if($contentLenght == -1){
 header('Content-Type: '.$contentType);		
 header('Content-Length: '.$contentLenght);
 header('HTTP/1.1: '.$http_code);
+
+//Get Disposition filename
+$filename = getDisposition($response);
+//Check whether that have filename
+if($filename != false){
+    //Send header Disposition
+    header('Content-disposition: attachment; filename='.$filename); 
+}
 
 //Added improvement to some free web hosting
 //End buffering base header
