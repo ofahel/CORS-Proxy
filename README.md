@@ -20,6 +20,7 @@ As [Steve Jobs][jobs_wiki] says on the [BusinessWeek, May 25 1998][jobs_quote]
 - Proxy GET request.
 - Stream Download content.
 - Stream Content Type.
+- Stream Content Disposition
 - Proxy third party services.
 - Proxy JSON HTTP over HTTPS.
 - Bypass Mixed Content, load HTTP resources by Proxy.
