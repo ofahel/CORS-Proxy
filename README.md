@@ -1,6 +1,6 @@
 # CORS Proxy + Download Stream
 
-## _The simplest and and efficient way to bypass CORS_
+## _The simplest and efficient way to bypass CORS_
 
 [![oFahel](https://i.imgur.com/hSyuS32.png)](https://github.com/ofahel/)
 
